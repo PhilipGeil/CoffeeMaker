@@ -11,5 +11,11 @@ namespace CoffeeMaker
     /// </summary>
     class ThermoPot : Pot
     {
+        /// <summary>
+        /// Uses it's base class' default constructor 
+        /// </summary>
+        /// <param name="capacity"></param>
+        /// <param name="keepWarmDuration"></param>
+        public ThermoPot(double capacity, double keepWarmDuration) : base(capacity, keepWarmDuration) { }
     }
 }

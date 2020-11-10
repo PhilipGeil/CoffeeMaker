@@ -30,6 +30,16 @@ namespace CoffeeMaker
             get { return keepWarmDuration; }
             set { keepWarmDuration = value; }
         }
+        /// <summary>
+        /// Default constructor for Pot - because we always wants to know the capacity and the keepWarmDuration.
+        /// </summary>
+        /// <param name="capacity"></param>
+        /// <param name="keepWarmDuration"></param>
+        public Pot(double capacity, double keepWarmDuration)
+        {
+            Capacity = capacity;
+            KeepWarmDuration = keepWarmDuration;
+        }
 
 
     }
